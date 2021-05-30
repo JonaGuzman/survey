@@ -18,3 +18,8 @@ services:
       - "8000:8000"
     depends_on:
       - db
+  coverage:
+    build: .
+    command: coverage run --source='.' manage.py test qr_survey.tests -v 2 && coverage report
+    volumes:
+      - .:/code
