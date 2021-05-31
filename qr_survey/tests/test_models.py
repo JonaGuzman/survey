@@ -1,7 +1,6 @@
 from django.test import TestCase
 from qr_survey.models import Poster, Question, Answer
 
-
 class PosterTestCase(TestCase):
     def setUp(self):
         self.poster = Poster(name='Test Poster', qr_id='qr12344')

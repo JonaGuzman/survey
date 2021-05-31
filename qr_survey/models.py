@@ -22,7 +22,7 @@ class Answer(models.Model):
     question = models.OneToOneField(
         Question,
         on_delete=models.CASCADE,
-        related_name='answer_to_question'
+        related_name='answer_to'
     )
 
     answer = models.PositiveIntegerField(
