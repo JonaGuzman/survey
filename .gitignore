@@ -13,6 +13,11 @@ ENV/
 env.bak/
 venv.bak/
 
+# Unit tests / coverage reports
+.coverage
+.coverage.*
+htmlcov/
+
 # QR generated images
 images
 
